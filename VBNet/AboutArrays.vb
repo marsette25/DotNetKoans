@@ -5,9 +5,9 @@ Public Class AboutArrays
     <Koan(1)> _
     Public Sub CreatingArrays()
         Dim empty_array = New Object() {}
-        Assert.Equal(GetType(FillMeIn), empty_array.GetType())
+        Assert.Equal(GetType(array), empty_array.GetType())
         'Note that you have to explicitly check for subclasses
-        Assert.True(GetType(Array).IsAssignableFrom(empty_array.GetType()))
+        Assert.True(GetType(System.Array).IsAssignableFrom(empty_array.GetType()))
         Assert.Equal(FILL_ME_IN, empty_array.Length)
     End Sub
 
@@ -22,7 +22,7 @@ Public Class AboutArrays
         'This is important because...
         Assert.True(Array.IsFixedSize)
         '...it means we can't do this: array(1) = 13;
-        Assert.Throws(GetType(FillMeIn), Sub() array(1) = 13)
+        Assert.Throws(GetType(array), Sub() array(1) = 13)
         'This is because the array is fixed at length 1. You could write a function
         'which created a new array bigger than the last, copied the elements over, and
         'returned the new array. Or you could do this:

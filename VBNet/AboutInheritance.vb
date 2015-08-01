@@ -50,12 +50,12 @@ Public Class AboutInheritance
 
     <Koan(1)> _
     Public Sub SubclassesHaveTheParentAsAnAncestor()
-        Assert.True(GetType(FillMeIn).IsAssignableFrom(GetType(Chihuahua)))
+        Assert.True(GetType(array).IsAssignableFrom(GetType(Chihuahua)))
     End Sub
 
     <Koan(2)> _
     Public Sub AllClassesUltimatelyInheritFromAnObject()
-        Assert.True(GetType(FillMeIn).IsAssignableFrom(GetType(Chihuahua)))
+        Assert.True(GetType(array).IsAssignableFrom(GetType(Chihuahua)))
     End Sub
 
     <Koan(3)> _

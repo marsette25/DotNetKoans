@@ -128,7 +128,7 @@ Public Class AboutMethods
 
     <Koan(11)> _
     Public Sub CallingGenericMethods()
-        Assert.Equal(GetType(FillMeIn), GiveMeBack(Of Integer)(1).GetType())
+        Assert.Equal(GetType(array), GiveMeBack(Of Integer)(1).GetType())
         Assert.Equal(FILL_ME_IN, GiveMeBack(Of String)("Hi!"))
     End Sub
 End Class

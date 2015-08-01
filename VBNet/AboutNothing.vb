@@ -13,7 +13,7 @@ Public Class AboutNothing
         'Don't be confused by the code below. It is using Anonymous Delegates which we will
         'cover later on. 
         Dim obj As Object = Nothing
-        Assert.Throws(GetType(FillMeIn), Function() Nothing.ToString())
+        Assert.Throws(GetType(array), Function() Nothing.ToString())
         'What's the message of the exception? What substring or pattern could you test
         'against in order to have a good idea of what the string is?
         Try

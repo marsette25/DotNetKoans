@@ -24,7 +24,7 @@ namespace DotNetKoans.CSharp
 		{
 			ArrayList list = new ArrayList();
 			System.Reflection.MethodInfo method = list.GetType().GetMethod("Add");
-			Assert.Equal(typeof(FillMeIn), method.GetParameters()[0].ParameterType);
+			Assert.Equal(typeof(array), method.GetParameters()[0].ParameterType);
 		}
 		[Koan(3)]
 		public void MustCastWhenRetrieving()
@@ -126,7 +126,7 @@ namespace DotNetKoans.CSharp
 		{
 			List<int> list = new List<int> { 1, 2, 3 };
 			//You cannot attempt to get data that doesn't exist
-			Assert.Throws(typeof(FillMeIn), delegate() { int x = list[3]; });
+			Assert.Throws(typeof(array), delegate() { int x = list[3]; });
 		}
 		[Koan(12)]
 		public void ConvertingToFixedSize()
@@ -214,7 +214,7 @@ namespace DotNetKoans.CSharp
 		{
 			Dictionary<string, string> dictionary = new Dictionary<string, string>();
 			dictionary["one"] = "uno";
-			Assert.Throws(typeof(FillMeIn), delegate() { string s = dictionary["two"]; });
+			Assert.Throws(typeof(array), delegate() { string s = dictionary["two"]; });
 		}
 		[Koan(22)]
 		public void CatchingMissingData()

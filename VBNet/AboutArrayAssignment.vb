@@ -17,7 +17,7 @@ Public Class AboutArrayAssignment
         'Even though we don't specify types explicitly, the compiler
         'will pick one for us
         Dim name = "John"
-        Assert.Equal(GetType(FillMeIn), name.GetType())
+        Assert.Equal(GetType(array), name.GetType())
         'but only if it can. So this doesn't work
         'var array = nothing;
         'It also knows the type, so once the above is in place, this doesn't work:
@@ -29,7 +29,7 @@ Public Class AboutArrayAssignment
         'Even though we don't specify types explicitly, the compiler
         'will pick one for us
         Dim names = New String() {"John", "Smith"}
-        Assert.Equal(GetType(FillMeIn), names.GetType())
+        Assert.Equal(GetType(array), names.GetType())
         'but only if it can. So this doesn't work
         'var array = new[] { "John", 1 };
     End Sub

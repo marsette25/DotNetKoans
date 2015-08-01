@@ -161,7 +161,7 @@ Public Class AboutControlStatements
                 list.Add(item.ToUpper())
             Next
         Catch ex As Exception
-            Assert.Equal(GetType(FillMeIn), ex.GetType())
+            Assert.Equal(GetType(array), ex.GetType())
         End Try
     End Sub
 

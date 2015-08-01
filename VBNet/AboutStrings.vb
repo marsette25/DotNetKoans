@@ -16,13 +16,13 @@ Public Class AboutStrings
     <Koan(1)> _
     Public Sub DoubleQuotedStringsAreStrings()
         Dim str = "Hello, World"
-        Assert.Equal(GetType(FillMeIn), str.GetType())
+        Assert.Equal(GetType(array), str.GetType())
     End Sub
 
     <Koan(2)> _
     Public Sub SingleQuotedStringsAreNotStrings()
         Dim str = "H"c
-        Assert.Equal(GetType(FillMeIn), str.GetType())
+        Assert.Equal(GetType(array), str.GetType())
     End Sub
 
     <Koan(3)> _

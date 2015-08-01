@@ -168,7 +168,7 @@ namespace DotNetKoans.CSharp
         [Koan(11)]
         public void CallingGenericMethods()
         {
-            Assert.Equal(typeof(FillMeIn), GiveMeBack<int>(1).GetType());
+            Assert.Equal(typeof(array), GiveMeBack<int>(1).GetType());
 
             Assert.Equal(FILL_ME_IN, GiveMeBack<string>("Hi!"));
         }

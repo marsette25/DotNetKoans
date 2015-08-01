@@ -18,15 +18,15 @@ Public Class AboutAsserts
     <Koan(3)> _
     Public Sub AssertEquality()
         Dim expectedValue = 3
-        Dim actualValue = 1 + 1
+        Dim actualValue = 1 + 2
         Assert.True(expectedValue = actualValue)
     End Sub
 
-    'Some wasy of asserting equality are better than others
+    'Some ways of asserting equality are better than others
     <Koan(4)> _
     Public Sub ABetterWayOfAssertingEquality()
         Dim expectedValue = 3
-        Dim actualValue = 1 + 1
+        Dim actualValue = 1 + 2
         Assert.Equal(expectedValue, actualValue)
     End Sub
 
